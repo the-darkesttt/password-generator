@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #252525;
 }
 
@@ -40,14 +40,59 @@ body {
     padding: 30px;
     background-color: #ffffff;
     border-radius: 18px;
+    text-align: center;
 }
 
 .content__password {
     margin: 30px 0;
     padding: 15px;
     border-radius: 8px;
-    border: 2px solid #888588;
-    background-color: #fff;
     width: 80%;
     text-align: center;
+    background-color: rgb(236, 242, 245);
+    word-break: break-all;
+}
+
+.content__selectors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 0 0;
+}
+
+#generateBtn {
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 10px 45px;
+    background-color: rgb(170, 151, 238);
+    border-radius: 18px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.number, 
+.symbol {
+    font-weight: 600;
+}
+
+.number {
+    color: #4591f5 !important; 
+}
+
+.symbol {
+    color: #f57745 !important; 
+}
+
+@media screen and (max-width: 570px) {
+    .content {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        padding: 30px 15px;
+    }
 }

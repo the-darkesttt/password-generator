@@ -7,7 +7,7 @@
     <title>Password Generator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,21 @@
                 <input type="range" name="passLength" id="passLength" min="8" max="50" value="15" step="1">
                 <span id="rangeValue"></span>
             </div>
+            <div class="content__selectors">
+                <label>
+                    Numbers
+                    <input type="checkbox" name="passProperties" value="numbers" checked>
+                </label>
+                <label>
+                    Upper case letters
+                    <input type="checkbox" name="passProperties" value="upperCase" checked>
+                </label>
+                <label>
+                    Special symbols
+                    <input type="checkbox" name="passProperties" value="specialSybmbols" checked>
+                </label>
+            </div>
+            <button id="generateBtn">Generate</button>
         </div>
     </div>
     <script src="script.js"></script>
